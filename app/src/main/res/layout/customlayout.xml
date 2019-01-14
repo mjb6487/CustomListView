@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/yearView"
+        android:gravity="left"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="5dp"
+        android:text="2018"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/monthView"
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/yearView"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="35dp"
+        android:text="Jun"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/dayView"
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="27dp"
+        android:textSize="30sp"
+        android:text="05"
+        android:layout_marginLeft="27dp" />
+
+    <TextView
+        android:id="@+id/playersView"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:textSize="22sp"
+        android:text="Players:" />
+
+    <TextView
+        android:id="@+id/numPlayersView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="155dp"
+        android:textSize="30sp"
+        android:text="2"
+        android:layout_marginLeft="27dp" />
+
+    <TextView
+        android:id="@+id/winnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="70dp"
+        android:textSize="22sp"
+        android:text="Winner:" />
+
+    <TextView
+        android:id="@+id/winnerNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/winnerView"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="70dp"
+        android:textSize="22sp"
+        android:text="Tom" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="245dp"
+        android:layout_marginLeft="245dp"
+        android:textSize="22sp"
+        android:text="Time:" />
+
+    <TextView
+        android:id="@+id/timePlayedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/timeView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="0dp"
+        android:textSize="30sp"
+        android:text="0h 37m"
+        android:layout_marginLeft="27dp" />
+
+    <!--android:layout_alignParentRight="true"-->
+    <TextView
+        android:id="@+id/bestScoreView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/timePlayedView"
+        android:layout_alignRight="@id/timePlayedView"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="70dp"
+        android:text="40"
+        android:textSize="22sp" />
+
+</RelativeLayout>
