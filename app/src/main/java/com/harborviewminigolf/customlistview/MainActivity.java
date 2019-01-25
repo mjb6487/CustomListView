@@ -1,13 +1,18 @@
 package com.harborviewminigolf.customlistview;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
     String[] TIME = {"0h 37m", "0h 56m", "0h 33m", "0h 42m", "1h 23m", "1h 32m"};
 
+    String[] SCORES_1 = {"3","4","1","6","3","3","4","3","2","2","6","5","1","4","3","4","3","2"};
+    String[] SCORES_2 = {"4","5","5","6","5","4","4","6","5","2","1","1","3","4","4","3","2","2"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,18 +58,38 @@ public class MainActivity extends AppCompatActivity {
         //      graphical representation, such as a list view
         listView.setAdapter(customAdapter);
 
-        /*
         listView.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
 
-                String item = ((TextView)view).getText().toString();
+                // Get index
+                // print array value at that index
+                // show blank scorecard
 
-                Toast.makeText(getBaseContext(), item, Toast.LENGTH_LONG).show();
+                Log.d("clickTag", Integer.toString(position));
+
+                // Create intent to go to scorecardActivity
+                Intent scorecardIntent = new Intent(MainActivity.this, ScorecardActivity.class);
+
+                // Pass number of players
+                scorecardIntent.putExtra("numberOfPlayers", Integer.parseInt(NUM_PLAYERS[position]));
+
+                // Pass first scores array to scorecard
+                Bundle bundle_1 = new Bundle();
+                bundle_1.putStringArray("scores_1",SCORES_1);
+                scorecardIntent.putExtras(bundle_1);
+
+                // Pass second scores array to scorecard
+                Bundle bundle_2 = new Bundle();
+                bundle_2.putStringArray("scores_2",SCORES_2);
+                scorecardIntent.putExtras(bundle_2);
+
+                // Start scorecard activity
+                startActivity(scorecardIntent);
 
             }
-        });*/
+        });
     }
 
 

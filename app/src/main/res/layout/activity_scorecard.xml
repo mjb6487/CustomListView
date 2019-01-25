@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScorecardActivity">
+
+    <LinearLayout
+        android:id="@+id/scorecardHolderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textview_border"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509">
+
+        <LinearLayout
+            android:id="@+id/nameColumn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/textview_border"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/nameHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Name" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textview_border">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/holeOneColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeOneHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeTwoColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeTwoHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeThreeColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeThreeHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeFourColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeFourHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeFiveColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeFiveHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeSixColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeSixHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeSevenColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeSevenHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeEightColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeEightHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeNineColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeNineHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeTenColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeTenHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeElevenColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeElevenHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeTwelveColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeTwelveHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeThirteenColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeThirteenHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeFourteenColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeFourteenHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeFifteenColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeFifteenHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeSixteenColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeSixteenHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeSeventeenColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeSeventeenHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="17" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/holeEighteenColumn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holeEighteenHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center_horizontal"
+                        android:text="18" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/halfTotal"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/textview_border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/halfWayTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Half" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gameTotal"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/textview_border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Total" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/scoreOneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="255dp" />
+
+            <Button
+                android:id="@+id/scoreTwoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="2"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="253dp" />
+
+            <Button
+                android:id="@+id/scoreThreeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="3"
+                tools:layout_editor_absoluteX="256dp"
+                tools:layout_editor_absoluteY="251dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/scoreFourButton"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="4"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="409dp" />
+
+            <Button
+                android:id="@+id/scoreFiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="5"
+                tools:layout_editor_absoluteX="135dp"
+                tools:layout_editor_absoluteY="391dp" />
+
+            <Button
+                android:id="@+id/scoreSixButton"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="6"
+                tools:layout_editor_absoluteX="278dp"
+                tools:layout_editor_absoluteY="389dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
