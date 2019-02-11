@@ -4,7 +4,8 @@
     android:id="@+id/customlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/item_shape">
 
     <TextView
         android:id="@+id/yearView"
@@ -75,8 +76,8 @@
         android:id="@+id/winnerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
         android:layout_marginTop="70dp"
         android:textSize="22sp"
         android:text="Winner:" />
@@ -119,8 +120,8 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@id/timePlayedView"
         android:layout_alignRight="@id/timePlayedView"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="75dp"
         android:text="40"
         android:textSize="22sp" />
 

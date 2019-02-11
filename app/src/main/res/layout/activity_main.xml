@@ -3,11 +3,17 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_turf">
 
     <ListView
+        android:layout_marginTop="10.0sp"
+        android:layout_marginLeft="8.50sp"
+        android:layout_marginRight="8.5sp"
+        android:radius="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:dividerHeight="10.0sp"
         android:id="@+id/listView">
     </ListView>
 </LinearLayout>

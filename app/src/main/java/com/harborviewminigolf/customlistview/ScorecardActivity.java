@@ -76,12 +76,14 @@ public class ScorecardActivity extends AppCompatActivity {
         halfTotal = findViewById(R.id.halfTotal);
         gameTotal = findViewById(R.id.gameTotal);
 
+        /************* REMOVE BUTTONS ************/
         enter1 = findViewById(R.id.scoreOneButton);
         enter2 = findViewById(R.id.scoreTwoButton);
         enter3 = findViewById(R.id.scoreThreeButton);
         enter4 = findViewById(R.id.scoreFourButton);
         enter5 = findViewById(R.id.scoreFiveButton);
         enter6 = findViewById(R.id.scoreSixButton);
+        /******************************************/
 
         holeTracker = new TextView[playerNames.length][18];
         nameTracker = new TextView[playerNames.length];
@@ -209,6 +211,7 @@ public class ScorecardActivity extends AppCompatActivity {
             gameTotal.addView(tempTextView);
             gameTotalTracker[i] = tempTextView;
         }
+
 
         enter1.setOnClickListener(new View.OnClickListener()
         {

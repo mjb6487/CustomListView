@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ScorecardActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_turf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp" />
+
     <LinearLayout
         android:id="@+id/scorecardHolderLayout"
         android:layout_width="match_parent"
@@ -16,30 +27,30 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/textview_border"
+        android:background="@drawable/scorecard_background"
         android:orientation="horizontal"
+        android:padding="8dp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.509">
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <LinearLayout
             android:id="@+id/nameColumn"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:background="@drawable/textview_border"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/nameHeader"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:background="@drawable/textview_border"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="Name" />
+                android:text="Name"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <HorizontalScrollView
@@ -55,7 +66,7 @@
 
                 <LinearLayout
                     android:id="@+id/holeOneColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -63,15 +74,16 @@
                     <TextView
                         android:id="@+id/holeOneHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="1" />
+                        android:gravity="center_horizontal|center"
+                        android:text="1"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeTwoColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -79,15 +91,16 @@
                     <TextView
                         android:id="@+id/holeTwoHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="2" />
+                        android:gravity="center"
+                        android:text="2"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeThreeColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -95,15 +108,16 @@
                     <TextView
                         android:id="@+id/holeThreeHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="3" />
+                        android:gravity="center"
+                        android:text="3"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeFourColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -111,15 +125,16 @@
                     <TextView
                         android:id="@+id/holeFourHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="4" />
+                        android:gravity="center"
+                        android:text="4"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeFiveColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -127,15 +142,16 @@
                     <TextView
                         android:id="@+id/holeFiveHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="5" />
+                        android:gravity="center"
+                        android:text="5"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeSixColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -143,15 +159,16 @@
                     <TextView
                         android:id="@+id/holeSixHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="6" />
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeSevenColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -159,15 +176,16 @@
                     <TextView
                         android:id="@+id/holeSevenHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="7" />
+                        android:gravity="center"
+                        android:text="7"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeEightColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -175,15 +193,16 @@
                     <TextView
                         android:id="@+id/holeEightHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="8" />
+                        android:gravity="center"
+                        android:text="8"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeNineColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -191,15 +210,33 @@
                     <TextView
                         android:id="@+id/holeNineHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="9" />
+                        android:gravity="center"
+                        android:text="9"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/halfTotal"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/halfWayTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/textview_border"
+                        android:gravity="center"
+                        android:text="Half"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeTenColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -207,15 +244,16 @@
                     <TextView
                         android:id="@+id/holeTenHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="10" />
+                        android:gravity="center"
+                        android:text="10"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeElevenColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -223,15 +261,16 @@
                     <TextView
                         android:id="@+id/holeElevenHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="11" />
+                        android:gravity="center"
+                        android:text="11"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeTwelveColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -239,15 +278,16 @@
                     <TextView
                         android:id="@+id/holeTwelveHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="12" />
+                        android:gravity="center"
+                        android:text="12"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeThirteenColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -255,15 +295,16 @@
                     <TextView
                         android:id="@+id/holeThirteenHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="13" />
+                        android:gravity="center"
+                        android:text="13"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeFourteenColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -271,15 +312,16 @@
                     <TextView
                         android:id="@+id/holeFourteenHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="14" />
+                        android:gravity="center"
+                        android:text="14"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeFifteenColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -287,15 +329,16 @@
                     <TextView
                         android:id="@+id/holeFifteenHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="15" />
+                        android:gravity="center"
+                        android:text="15"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeSixteenColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -303,15 +346,16 @@
                     <TextView
                         android:id="@+id/holeSixteenHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="16" />
+                        android:gravity="center"
+                        android:text="16"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeSeventeenColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -319,15 +363,16 @@
                     <TextView
                         android:id="@+id/holeSeventeenHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="17" />
+                        android:gravity="center"
+                        android:text="17"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/holeEighteenColumn"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/textview_border"
                     android:orientation="vertical">
@@ -335,33 +380,18 @@
                     <TextView
                         android:id="@+id/holeEighteenHeader"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
                         android:background="@drawable/textview_border"
-                        android:gravity="center_horizontal"
-                        android:text="18" />
+                        android:gravity="center"
+                        android:text="18"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
         </HorizontalScrollView>
 
         <LinearLayout
-            android:id="@+id/halfTotal"
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/textview_border"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/halfWayTotal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/textview_border"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="Half" />
-        </LinearLayout>
-
-        <LinearLayout
             android:id="@+id/gameTotal"
-            android:layout_width="40dp"
+            android:layout_width="45dp"
             android:layout_height="match_parent"
             android:background="@drawable/textview_border"
             android:orientation="vertical">
@@ -369,24 +399,25 @@
             <TextView
                 android:id="@+id/totalHeader"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:background="@drawable/textview_border"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="Total" />
+                android:gravity="center"
+                android:text="Game"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
 
     <TableLayout
         android:id="@+id/tableLayout2"
-        android:layout_width="368dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/endGameButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -396,65 +427,96 @@
 
             <Button
                 android:id="@+id/scoreOneButton"
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:background="@drawable/selector_1"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="1"
                 tools:layout_editor_absoluteX="27dp"
                 tools:layout_editor_absoluteY="255dp" />
 
             <Button
                 android:id="@+id/scoreTwoButton"
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="2"
+                android:background="@drawable/selector_2"
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="253dp" />
 
             <Button
                 android:id="@+id/scoreThreeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="3"
+                android:background="@drawable/selector_3"
                 tools:layout_editor_absoluteX="256dp"
                 tools:layout_editor_absoluteY="251dp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/scoreFourButton"
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="4"
+                android:background="@drawable/selector_4"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="409dp" />
 
             <Button
                 android:id="@+id/scoreFiveButton"
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="5"
+                android:background="@drawable/selector_5"
                 tools:layout_editor_absoluteX="135dp"
                 tools:layout_editor_absoluteY="391dp" />
 
             <Button
                 android:id="@+id/scoreSixButton"
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="6"
+                android:background="@drawable/selector_6"
                 tools:layout_editor_absoluteX="278dp"
                 tools:layout_editor_absoluteY="389dp" />
         </TableRow>
 
     </TableLayout>
+
+    <Button
+        android:id="@+id/endGameButton"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/main_screen_sub_buttons"
+        android:text="Submit Scores"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="272dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/harborview_logo" />
 
 </android.support.constraint.ConstraintLayout>
